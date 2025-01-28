@@ -1,5 +1,11 @@
 Conversor de valores R$(BRL) e Dólar Canadênse (CAD) 
 
-Tecnologias utilizadas: HTML, CSS, JavaScript.
+Sobre:
 
-By: Iago Meirim.
+Intuito de verificar valores quanto Brasileiros e Canadênses, fazendo análises e comparações.
+
+Tecnologias utilizadas: 
+
+HTML, CSS, JavaScript.
+
+By: Iago Meirim.:)
