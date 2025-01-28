@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conv CAD/BRL</title>
+</head>
+
+<body>
+
+    <h1 id="Titulo">Conversor BRL p CAD 🇨🇦</h1>
+
+    <input placeholder="Valor em Real" type="number" id="valorReal"><br><br>
+
+    <button onclick="converter()">Converter</button>
+
+    <img id="cad" src="/ASSETS/canadá.webp" alt="CAD">
+
+    <h1 id="Titulo2">Conversor CAD p BRL 🇧🇷</h1>
+
+    <input placeholder="Valor em CAD" type="number" id="valorCad"><br><br>
+
+    <button onclick="converterCad()">Converter</button>
+
+    <img id="br" src="/ASSETS/brasil.webp" alt="BRL">
+
+<footer>
+
+    <p id="fim">Todos direitos Reservados By: Iago Meirim ❤️</p>
+
+</footer>
+
+</body>
+
+<style>
+
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+
+#Titulo {
+    color: red
+}
+
+#Titulo2 {
+    color: green;
+}
+
+#cad {
+    position: relative;
+    width: 4vw;
+    border-radius: 5%;
+    box-shadow: 0 0 25px red;
+    cursor: pointer;
+}
+
+#br {
+    position: relative;
+    width: 4vw;
+    border-radius: 5%;
+    box-shadow: 0 0 25px green;
+    cursor: pointer; 
+}
+
+#fim {
+    font-family: 'Great Vibes', sans-serif;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    background-color: #fff;
+    padding: 10px;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.2);
+}
+
+</style>
+
+<script>
+
+    function converter() {
+
+        const valoReal = document.querySelector("#valorReal").value
+
+        const taxaDeCambio = 4.07
+
+        const valorConvertido = valoReal / taxaDeCambio
+
+        alert(`O valor convertido em Dólar Canadense é ${valorConvertido.toFixed(2)} CAD`);
+
+        document.querySelector("#Titulo").style.color = "black"
+    }
+
+    function converterCad() {
+
+        const valorCad = document.querySelector("#valorCad").value
+
+        const taxaDeCambio1 = 4.07
+
+        const valorConvertido1 = taxaDeCambio1 * valorCad
+
+        alert(`O valor convertido em Real é ${valorConvertido1.toFixed(2)} BRL`);
+
+        document.querySelector("#Titulo2").style.color = "blue"
+    }
+
+</script>
+
+</html>
