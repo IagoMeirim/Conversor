@@ -8,4 +8,4 @@ Tecnologias utilizadas:
 
 HTML, CSS, JavaScript.
 
-By: Iago Meirim.:)
+By: Iago Meirim. :)
